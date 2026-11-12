@@ -1,0 +1,27 @@
+[
+  {
+    "id": "q1",
+    "question": "Which file and function turns a directory of source files into a symbol table with line numbers?",
+    "expect_substrings": ["parse.rs", "extract"]
+  },
+  {
+    "id": "q2",
+    "question": "Where is the check that every file:line in a generated map points at a real symbol?",
+    "expect_substrings": ["anchor.rs", "validate"]
+  },
+  {
+    "id": "q3",
+    "question": "What would I change to add support for a new programming language?",
+    "expect_substrings": ["parse.rs", "language_for"]
+  },
+  {
+    "id": "q4",
+    "question": "Where is the decision made to skip regenerating a directory whose files have not changed?",
+    "expect_substrings": ["orchestrate.rs", "freshness"]
+  },
+  {
+    "id": "q5",
+    "question": "Which module builds the HTTP request body sent to the Anthropic Batch API?",
+    "expect_substrings": ["http.rs", "build_batch_body"]
+  }
+]
